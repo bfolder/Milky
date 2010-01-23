@@ -1,0 +1,758 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../override.css" type="text/css"><meta name="keywords" content="Milky,com.boxedfolder.rtm.Milky,ADD_CONTACT_TO_GROUP,ADD_CONTACT,ADD_GROUP,ADD_LIST,ADD_NOTE,ADD_TASK_TAGS,ADD_TASK,ARCHIVE_LIST,ARRAY_FORMAT,BASE_URL,CHECK_TOKEN,CONVERT_TIME,CREATE_TIMELINE,DELETE_CONTACT,DELETE_GROUP,DELETE_LIST,DELETE_NOTE,DELETE_TASK,EDIT_NOTE,GET_CONTACT_LIST,GET_FROB,GET_GROUP_LIST,GET_LISTS,GET_LOCATIONS,GET_METHODS,GET_METHOD_INFO,GET_SETTINGS,GET_TASK_LIST,GET_TIMEZONES,GET_TOKEN,MOVE_TASK_PRIORITY,MOVE_TASK_TO_LIST,PARSE_TIME,PERMISSION_DELETE,PERMISSION_READ,PERMISSION_WRITE,POSTPONE_TASK,PRIORITY_DOWN,PRIORITY_UP,REMOVE_CONTACT_FROM_GROUP,REMOVE_TAGS,SET_DEFAULT_LIST,SET_LIST_NAME,SET_TASK_COMPLETE,SET_TASK_DUE_DATE,SET_TASK_ESTIMATE,SET_TASK_LOCATION,SET_TASK_NAME,SET_TASK_PRIORITY,SET_TASK_RECURRENCE,SET_TASK_TAGS,SET_TASK_UNCOMPLETE,SET_TASK_URL,TEST_ECHO,TEST_LOGIN,UNARCHIVE_LIST,UNDO_TRANSACTION,XML_FORMAT,apiKey,dataFormat,fullName,isBusy,lastApiMethod,lastResult,permission,sharedSecret,userId,userName,addContact,addContactToGroup,addGroup,addList,addNote,addTask,addTaskTags,archiveList,checkToken,convertTime,createTimeline,deleteContact,deleteGroup,deleteList,deleteNote,deleteTask,editNote,generateAuthUrl,getContactList,getFrob,getGroupList,getLists,getLocations,getMethodInfo,getMethods,getSettings,getTaskList,getTimezones,getToken,handleComplete,handleComplete,handleHttpStatus,handleHttpStatus,handleIOErrors,handleIOErrors,handleOpen,handleOpen,handleProgress,handleProgress,handleSecurityError,handleSecurityError,movePriority,moveTaskToList,parseTime,postponeTask,removeContactFromGroup,removeTaskTags,setDefaultList,setListName,setTaskCompleted,setTaskDueDate,setTaskEstimate,setTaskLocation,setTaskName,setTaskPriority,setTaskRecurrence,setTaskTags,setTaskURL,setTaskUncomplete,signRequest,testEcho,testLogin,unArchiveList,undoTransaction"><title>com.boxedfolder.rtm.Milky</title></head><body><script language="javascript" type="text/javascript" src="../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'Milky - Milky API Dokumentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">Milky API Dokumentation</td><td class="titleTableTopNav" align="right"><a href="../../../package-summary.html" onclick="loadClassListFrame('../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../class-summary.html" onclick="loadClassListFrame('../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../all-index-A.html" onclick="loadClassListFrame('../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../index.html?com/boxedfolder/rtm/Milky.html&amp;com/boxedfolder/rtm/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">Milky</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#eventSummary">Events</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Milky"); titleBar_setSubNav(false,true,false,false,false,false,true,false,true,false,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">com.boxedfolder.rtm</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  Milky</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">Milky  <img src="../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> <a href="../../../com/boxedfolder/rtm/AbstractMilky.html">AbstractMilky</a> <img src="../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> flash.events.EventDispatcher</td></tr></table><p></p><p></p><p></p>
+	              <b>Milky</b>
+	 
+	              <p>
+	 RTM service class to use with rememberthemilk.com webservice. 
+	 For in-depth api documentation have a look at the official website:
+	 <a href="#/www.rememberthemilk.com/services/api/" target="">https://www.rememberthemilk.com/services/api/</a>
+	              </p>
+	              <p>
+	 This is a subclass of <code>AbstractMilky</code>. <code>AbstractMilky</code> implements base
+	 methods to send requests to the rtm webservice.
+	 </p>
+	  
+	           <p></p><p><span class="classHeaderTableLabel">See also</span></p><div class="seeAlso">https://www.rememberthemilk.com/services/api/</div><br/><hr></div><a name="propertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Properties</div><div class="showHideLinks"><div id="hideInheritedProperty" class="hideInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(false,'Property');"><img class="showHideLinkImage" src="../../../images/expanded.gif"> Hide Inherited Public Properties</a></div><div id="showInheritedProperty" class="showInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(true,'Property');"><img class="showHideLinkImage" src="../../../images/collapsed.gif"> Show Inherited Public Properties</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class="hideInheritedProperty"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><a href="../../../com/boxedfolder/rtm/AbstractMilky.html#apiKey" class="signatureLink">apiKey</a> : String<div class="summaryTableDescription">
+		 Your api key
+		  
+		 </div></td><td class="summaryTableOwnerCol"><a href="../../../com/boxedfolder/rtm/AbstractMilky.html">AbstractMilky</a></td></tr><tr class="hideInheritedProperty"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><a href="../../../com/boxedfolder/rtm/AbstractMilky.html#dataFormat" class="signatureLink">dataFormat</a> : String<div class="summaryTableDescription">
+		 Possible data formats are "array" or "xml"
+		 
+		 
+		 "array" responds with an array of VO´s
+		 "xml" responds with raw xml
+		 
+		 
+		 Some methods however respond with booleans, strings or xml.</div></td><td class="summaryTableOwnerCol"><a href="../../../com/boxedfolder/rtm/AbstractMilky.html">AbstractMilky</a></td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#fullName" class="signatureLink">fullName</a> : String<div class="summaryTableDescription">[read-only] 
+		 If token valid, returns the fullname.</div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class="hideInheritedProperty"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><a href="../../../com/boxedfolder/rtm/AbstractMilky.html#isBusy" class="signatureLink">isBusy</a> : Boolean<div class="summaryTableDescription">[read-only] 
+		 Retrieves busy status of URLLoader.</div></td><td class="summaryTableOwnerCol"><a href="../../../com/boxedfolder/rtm/AbstractMilky.html">AbstractMilky</a></td></tr><tr class="hideInheritedProperty"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><a href="../../../com/boxedfolder/rtm/AbstractMilky.html#lastApiMethod" class="signatureLink">lastApiMethod</a> : String<div class="summaryTableDescription">[read-only] 
+		 Returns the last called api method.</div></td><td class="summaryTableOwnerCol"><a href="../../../com/boxedfolder/rtm/AbstractMilky.html">AbstractMilky</a></td></tr><tr class="hideInheritedProperty"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><a href="../../../com/boxedfolder/rtm/AbstractMilky.html#lastResult" class="signatureLink">lastResult</a> : Object<div class="summaryTableDescription">[read-only] 
+		 Contains the last query result.</div></td><td class="summaryTableOwnerCol"><a href="../../../com/boxedfolder/rtm/AbstractMilky.html">AbstractMilky</a></td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#permission" class="signatureLink">permission</a> : String<div class="summaryTableDescription">[read-only] 
+		 If token valid, returns the permission status.</div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class="hideInheritedProperty"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><a href="../../../com/boxedfolder/rtm/AbstractMilky.html#sharedSecret" class="signatureLink">sharedSecret</a> : String<div class="summaryTableDescription">
+		 The shared key you get when signing up for an api key.</div></td><td class="summaryTableOwnerCol"><a href="../../../com/boxedfolder/rtm/AbstractMilky.html">AbstractMilky</a></td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#userId" class="signatureLink">userId</a> : uint<div class="summaryTableDescription">[read-only] 
+		 If token valid, returns the userId.</div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#userName" class="signatureLink">userName</a> : String<div class="summaryTableDescription">[read-only] 
+		 If token valid, returns the username.</div></td><td class="summaryTableOwnerCol">Milky</td></tr></table></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#Milky()" class="signatureLink">Milky</a>(apiKey:String, sharedSecret:String)</div><div class="summaryTableDescription"></div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#addContact()" class="signatureLink">addContact</a>(timeline:uint, name:String, token:String):void</div><div class="summaryTableDescription">
+		 Adds a contact with given eMail or name as name parameter.</div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#addContactToGroup()" class="signatureLink">addContactToGroup</a>(timeline:uint, groupId:uint, contactId:uint, token:String):void</div><div class="summaryTableDescription">
+		 Adds a specific contact to a group with given id.</div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#addGroup()" class="signatureLink">addGroup</a>(timeline:uint, name:String, token:String):void</div><div class="summaryTableDescription">
+		 Creates Group with given name
+		 
+		 
+		 Result will be of Type MilkyGroup.
+		  
+		 
+		 </div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#addList()" class="signatureLink">addList</a>(timeline:uint, name:String, token:String, filter:String):void</div><div class="summaryTableDescription">
+		 Adds a list with given name,timeline and filter
+		 
+		 Filter value is a string with parameter and brackets.</div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#addNote()" class="signatureLink">addNote</a>(timeline:uint, listId:uint, taskseriesId:uint, taskId:uint, title:String, body:String, token:String):void</div><div class="summaryTableDescription">
+		 Adds a new note with given properties
+		 
+		  
+		 Result will be of type MilkyNote.
+		 
+		 
+		 </div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#addTask()" class="signatureLink">addTask</a>(timeline:uint, name:String, token:String, listId:uint = 0, parse:String):void</div><div class="summaryTableDescription">
+		 Adds a task to the list with given id
+		 
+		  
+		 Result will be of type MilkyTaskSeries.
+		 
+		 
+		 
+		 parse is a paremter which supports Smart Add ability:
+		 
+		 http://www.rememberthemilk.com/services/smartadd/
+		  
+		 </div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#addTaskTags()" class="signatureLink">addTaskTags</a>(timeline:uint, listId:uint, taskseriesId:uint, taskId:uint, tags:Array, token:String):void</div><div class="summaryTableDescription">
+		 Adds tags to a specific task.</div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#archiveList()" class="signatureLink">archiveList</a>(timeline:uint, listId:uint, token:String):void</div><div class="summaryTableDescription">
+		 Archives list with given id
+		 		  
+		 Result will be a MilkyList objects.
+		 
+		 
+		 </div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#checkToken()" class="signatureLink">checkToken</a>(token:String):void</div><div class="summaryTableDescription">
+		 Checks if token is still valid
+		 
+		 Result Type will be string.
+		 
+		 
+		 </div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#convertTime()" class="signatureLink">convertTime</a>(toTimezone:String, fromTimezone:String, time:String):void</div><div class="summaryTableDescription">
+		 
+		 Converts time from one timezone to another.</div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#createTimeline()" class="signatureLink">createTimeline</a>(token:String):void</div><div class="summaryTableDescription">
+		 Creates a new timeline.</div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#deleteContact()" class="signatureLink">deleteContact</a>(timeline:uint, contactId:uint, token:String):void</div><div class="summaryTableDescription">
+		 Deletes a contact
+		 
+		 Result type will be Boolean.
+		 
+		  
+		 </div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#deleteGroup()" class="signatureLink">deleteGroup</a>(timeline:uint, groupId:uint, token:String):void</div><div class="summaryTableDescription">
+		 Deletes group with given id.</div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#deleteList()" class="signatureLink">deleteList</a>(timeline:uint, listId:uint, token:String):void</div><div class="summaryTableDescription">
+		 Deletes a list with given id
+		  
+		  
+		 Result will be a MilkyList objects.
+		 
+		 
+		 </div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#deleteNote()" class="signatureLink">deleteNote</a>(timeline:uint, noteId:uint, token:String):void</div><div class="summaryTableDescription">
+		 Deletes a note with given id
+		 
+		  
+		 Result will be of type Boolean.
+		 
+		 
+		 </div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#deleteTask()" class="signatureLink">deleteTask</a>(timeline:uint, listId:uint, taskseriesId:uint, taskId:uint, token:String):void</div><div class="summaryTableDescription">
+		 Deletes a task
+		 
+		  
+		 Result will be of type MilkyTaskSeries.
+		 
+		 
+		 
+		 parse is a paremter which supports Smart Add ability:
+		 
+		 http://www.rememberthemilk.com/services/smartadd/
+		  
+		 </div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#editNote()" class="signatureLink">editNote</a>(timeline:uint, noteId:uint, title:String, body:String, token:String):void</div><div class="summaryTableDescription">
+		 Edits a note with given id
+		 
+		  
+		 Result will be of type MilkyNote.
+		 
+		 
+		 </div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#generateAuthUrl()" class="signatureLink">generateAuthUrl</a>(frob:String, permission:String):String</div><div class="summaryTableDescription">
+		 Use this method to generate an auth-url string 
+		 
+		  
+		 </div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getContactList()" class="signatureLink">getContactList</a>(token:String):void</div><div class="summaryTableDescription">
+		  Gets the user´s contact list.</div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getFrob()" class="signatureLink">getFrob</a>():void</div><div class="summaryTableDescription">
+		 Gets a frob 
+		 
+		 Result Type will be String. 
+		 
+		 
+		 </div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getGroupList()" class="signatureLink">getGroupList</a>(token:String):void</div><div class="summaryTableDescription">
+		 Retrieves group list
+		 
+		 Result will be an array with MilkyGroup-Objects.
+		  
+		 
+		 </div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getLists()" class="signatureLink">getLists</a>(token:String):void</div><div class="summaryTableDescription">
+		 Retrieves a lists of lists 
+		 
+		  
+		 Result will be an array with a list of MilkyList objects.
+		 
+		 
+		 </div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getLocations()" class="signatureLink">getLocations</a>(token:String):void</div><div class="summaryTableDescription">
+		 Retrieves a list of locations.</div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getMethodInfo()" class="signatureLink">getMethodInfo</a>(name:String):void</div><div class="summaryTableDescription">
+		 Retrives method info
+		 
+		 Result type will be xml.
+		 
+		 
+		 </div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getMethods()" class="signatureLink">getMethods</a>():void</div><div class="summaryTableDescription">
+		 Retrives available methods
+		 
+		 Result type will be xml.
+		 
+		 
+		 </div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getSettings()" class="signatureLink">getSettings</a>(token:String):void</div><div class="summaryTableDescription">
+		 Retrieves user settings
+		 
+		 Result will be of type MilkySettings.
+		 
+		 </div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getTaskList()" class="signatureLink">getTaskList</a>(token:String, listId:uint = 0, lastSync:String, filter:String):void</div><div class="summaryTableDescription">
+		 Gets a list with Taskseries/Tasks 
+		 
+		  
+		 Result will be an array with objects of type MilkyTaskSeries.
+		 
+		  
+		 </div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getTimezones()" class="signatureLink">getTimezones</a>():void</div><div class="summaryTableDescription">
+		 Gets available timezones
+		 
+		 If result type is "array", result will be a vo of type MilkySettings 
+		 
+		 Result Type will be an array with a list of MilkyTimezone-Objects.
+		 
+		 </div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getToken()" class="signatureLink">getToken</a>(frob:String):void</div><div class="summaryTableDescription">
+		 Get a Token  
+		 
+		 Result Type Event will be String.
+		 
+		 
+		 </div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#movePriority()" class="signatureLink">movePriority</a>(timeline:uint, listId:uint, taskseriesId:uint, taskId:uint, token:String, direction:String):void</div><div class="summaryTableDescription">
+		 Moves Priority of a specific task
+		 
+		 
+		 Use contants MilkyConsts.PRIORITY_UP and MilkyConsts.PRIORITY_DOWN.</div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#moveTaskToList()" class="signatureLink">moveTaskToList</a>(timeline:uint, fromListId:uint, toListId:uint, taskseriesId:uint, taskId:uint, token:String):void</div><div class="summaryTableDescription">
+		 Moves a task to a specific list 
+		 
+		  
+		 Result will be of type MilkyTaskSeries.
+		 
+		  
+		 </div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#parseTime()" class="signatureLink">parseTime</a>(text:String, timezone:String, dateformat:uint = 1):void</div><div class="summaryTableDescription">
+		 Given text gets parsed.</div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#postponeTask()" class="signatureLink">postponeTask</a>(timeline:uint, listId:uint, taskseriesId:uint, taskId:uint, token:String):void</div><div class="summaryTableDescription">
+		 Postpones a task
+		 
+		  
+		 Result will be of type MilkyTaskSeries.
+		 
+		  
+		 </div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#removeContactFromGroup()" class="signatureLink">removeContactFromGroup</a>(timeline:uint, groupId:uint, contactId:uint, token:String):void</div><div class="summaryTableDescription">
+		 Removes a specific contact from a group with given id.</div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#removeTaskTags()" class="signatureLink">removeTaskTags</a>(timeline:uint, listId:uint, taskseriesId:uint, taskId:uint, tags:Array, token:String):void</div><div class="summaryTableDescription">
+		 Remove tags of a specific task.</div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setDefaultList()" class="signatureLink">setDefaultList</a>(timeline:uint, listId:uint, token:String):void</div><div class="summaryTableDescription">
+		 Sets list with given id as default list
+		  
+		  
+		 Result will be of type Boolean.
+		 
+		 
+		 </div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setListName()" class="signatureLink">setListName</a>(timeline:uint, listId:uint, name:String, token:String):void</div><div class="summaryTableDescription">
+		 Sets the name of the list with given id
+		 
+		 Parameter name should not be Inbox or Sent
+		 
+		 
+		  
+		 Result will be a MilkyList objects.
+		 
+		  
+		 </div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setTaskCompleted()" class="signatureLink">setTaskCompleted</a>(timeline:uint, listId:uint, taskseriesId:uint, taskId:uint, token:String):void</div><div class="summaryTableDescription">
+		 Mark a task as complete
+		 
+		  
+		 Result will be of type MilkyTaskSeries.
+		 
+		 
+		 </div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setTaskDueDate()" class="signatureLink">setTaskDueDate</a>(timeline:uint, listId:uint, taskseriesId:uint, taskId:uint, token:String, due:String, hasDueTime:Boolean = false, parse:Boolean = false):void</div><div class="summaryTableDescription">
+		 Sets due date of a task
+		 
+		 If empty, due date will be unset.</div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setTaskEstimate()" class="signatureLink">setTaskEstimate</a>(timeline:uint, listId:uint, taskseriesId:uint, taskId:uint, token:String, estimate:String):void</div><div class="summaryTableDescription">
+		 Sets the task estimate time
+		 
+		 Should provide value of day,hours or minutes.</div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setTaskLocation()" class="signatureLink">setTaskLocation</a>(timeline:uint, listId:uint, taskseriesId:uint, taskId:uint, token:String, locationId:uint = 0):void</div><div class="summaryTableDescription">
+		 Sets the task location
+		 
+		 
+		 If 0, location will be unset.</div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setTaskName()" class="signatureLink">setTaskName</a>(timeline:uint, listId:uint, taskseriesId:uint, taskId:uint, name:String, token:String):void</div><div class="summaryTableDescription">
+		 Sets the task name
+		 
+		  
+		 Result will be of type MilkyTaskSeries.
+		 
+		 
+		 </div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setTaskPriority()" class="signatureLink">setTaskPriority</a>(timeline:uint, listId:uint, taskseriesId:uint, taskId:uint, token:String, priority:uint = 0):void</div><div class="summaryTableDescription">
+		 Sets priority of a task
+		 
+		 
+		 Valid values are 1, 2 and 3.</div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setTaskRecurrence()" class="signatureLink">setTaskRecurrence</a>(timeline:uint, listId:uint, taskseriesId:uint, taskId:uint, token:String, repeat:String):void</div><div class="summaryTableDescription">
+		 Sets a reurrence pattern for a task
+		 
+		 Valid values of repeat are detailed here.</div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setTaskTags()" class="signatureLink">setTaskTags</a>(timeline:uint, listId:uint, taskseriesId:uint, taskId:uint, tags:Array, token:String):void</div><div class="summaryTableDescription">
+		 Sets tags of a specific task.</div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setTaskUncomplete()" class="signatureLink">setTaskUncomplete</a>(timeline:uint, listId:uint, taskseriesId:uint, taskId:uint, token:String):void</div><div class="summaryTableDescription">
+		 Mark a task as uncomplete
+		 
+		  
+		 Result will be of type MilkyTaskSeries.
+		 
+		 
+		 </div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setTaskURL()" class="signatureLink">setTaskURL</a>(timeline:uint, listId:uint, taskseriesId:uint, taskId:uint, token:String, url:String):void</div><div class="summaryTableDescription">
+		 Sets url for a task
+		 
+		 If left empty, url will be unset.</div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#testEcho()" class="signatureLink">testEcho</a>():void</div><div class="summaryTableDescription">
+		 Echo method for testing purposes
+		 
+		 Result type will be xml.
+		 
+		 
+		 </div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#testLogin()" class="signatureLink">testLogin</a>(token:String):void</div><div class="summaryTableDescription">
+		 Login method for testing purposes
+		 
+		 Result type will be xml.
+		 
+		 
+		 </div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#unArchiveList()" class="signatureLink">unArchiveList</a>(timeline:uint, listId:uint, token:String):void</div><div class="summaryTableDescription">
+		 Unarchives list with given id
+		 		  
+		 Result will be a MilkyList objects.
+		 
+		 
+		 </div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#undoTransaction()" class="signatureLink">undoTransaction</a>(timeline:uint, transactionId:Number, token:String):void</div><div class="summaryTableDescription">
+		 Perform an undo operation on given transaction id
+		 
+		  
+		 Result will be of type Boolean.
+		 
+		  
+		 </div></td><td class="summaryTableOwnerCol">Milky</td></tr></table></div><a name="protectedMethodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Protected Methods </div><div class="showHideLinks"><div id="hideInheritedProtectedMethod" class="hideInheritedProtectedMethod"><a class="showHideLink" href="#protectedMethodSummary" onclick="javascript:setInheritedVisible(false,'ProtectedMethod');"><img class="showHideLinkImage" src="../../../images/expanded.gif"> Show Inherited Protected Methods</a></div><div id="showInheritedProtectedMethod" class="showInheritedProtectedMethod"><a class="showHideLink" href="#protectedMethodSummary" onclick="javascript:setInheritedVisible(true,'ProtectedMethod');"><img class="showHideLinkImage" src="../../../images/collapsed.gif"> Show Inherited Protected Methods</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProtectedMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#handleComplete()" class="signatureLink">handleComplete</a>(e:Event = null):void</div><div class="summaryTableDescription">[override] 
+		 Event handling for
+		 Event.COMPLETE.</div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#handleHttpStatus()" class="signatureLink">handleHttpStatus</a>(e:HTTPStatusEvent = null):void</div><div class="summaryTableDescription">[override] 
+		 Event forwarding for
+		 HTTPStatusEvent.HTTP_STATUS.</div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#handleIOErrors()" class="signatureLink">handleIOErrors</a>(e:IOErrorEvent = null):void</div><div class="summaryTableDescription">[override] 
+		 Event forwarding for
+		 IOErrorEvent.IO_ERROR.</div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#handleOpen()" class="signatureLink">handleOpen</a>(e:Event = null):void</div><div class="summaryTableDescription">[override] 
+		 Event forwarding for
+		 Event.OPEN.</div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#handleProgress()" class="signatureLink">handleProgress</a>(e:ProgressEvent = null):void</div><div class="summaryTableDescription">[override] 
+		 Event forwarding for
+		 ProgressEvent.PROGRESS.</div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#handleSecurityError()" class="signatureLink">handleSecurityError</a>(e:SecurityErrorEvent = null):void</div><div class="summaryTableDescription">[override] 
+		 Event forwarding for
+		 SecurityErrorEvent.SECURITY_ERROR.</div></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class="hideInheritedProtectedMethod"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../com/boxedfolder/rtm/AbstractMilky.html#signRequest()" class="signatureLink">signRequest</a>(args:URLVariables):String</div><div class="summaryTableDescription">
+		 
+		 Sign the request.</div></td><td class="summaryTableOwnerCol"><a href="../../../com/boxedfolder/rtm/AbstractMilky.html">AbstractMilky</a></td></tr></table></div><a name="eventSummary"></a><div class="summarySection"><div class="summaryTableTitle">Events</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableEvent"><tr><th>&nbsp;</th><th colspan="2">Event</th><th> Summary </th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:api_fail" class="signatureLink">api_fail</a></div></td><td class="summaryTableDescription summaryTableCol"></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:api_result" class="signatureLink">api_result</a></div></td><td class="summaryTableDescription summaryTableCol"></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:httpStatus" class="signatureLink">httpStatus</a></div></td><td class="summaryTableDescription summaryTableCol"></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:ioError" class="signatureLink">ioError</a></div></td><td class="summaryTableDescription summaryTableCol"></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:open" class="signatureLink">open</a></div></td><td class="summaryTableDescription summaryTableCol"></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:progress" class="signatureLink">progress</a></div></td><td class="summaryTableDescription summaryTableCol"></td><td class="summaryTableOwnerCol">Milky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:securityError" class="signatureLink">securityError</a></div></td><td class="summaryTableDescription summaryTableCol"></td><td class="summaryTableOwnerCol">Milky</td></tr></table></div><a name="protectedConstantSummary"></a><div class="summarySection"><div class="summaryTableTitle">Protected Constants</div><div class="showHideLinks"><div id="hideInheritedProtectedConstant" class="hideInheritedProtectedConstant"><a class="showHideLink" href="#protectedConstantSummary" onclick="javascript:setInheritedVisible(false,'ProtectedConstant');"><img class="showHideLinkImage" src="../../../images/expanded.gif"> Hide Inherited Protected Constants</a></div><div id="showInheritedProtectedConstant" class="showInheritedProtectedConstant"><a class="showHideLink" href="#protectedConstantSummary" onclick="javascript:setInheritedVisible(true,'ProtectedConstant');"><img class="showHideLinkImage" src="../../../images/collapsed.gif"> Show Inherited Protected Constants</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable hideInheritedProtectedConstant" id="summaryTableProtectedConstant"><tr><th>&nbsp;</th><th colspan="2">Constant</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class="hideInheritedProtectedConstant"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><a href="../../../com/boxedfolder/rtm/AbstractMilky.html#BASE_URL" class="signatureLink">BASE_URL</a> : String = http://api.rememberthemilk.com/services/rest/<div class="summaryTableDescription">[static] 
+		 Base url 
+		 http://api.rememberthemilk.com/services/rest/
+		 
+		 </div></td><td class="summaryTableOwnerCol"><a href="../../../com/boxedfolder/rtm/AbstractMilky.html">AbstractMilky</a></td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="fullName"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">fullName</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>fullName:String</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 If token valid, returns the fullname. 
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get fullName():String</code><br/></div><a name="propertyDetail"></a><a name="permission"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">permission</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>permission:String</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 If token valid, returns the permission status.  
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get permission():String</code><br/></div><a name="propertyDetail"></a><a name="userId"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">userId</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>userId:uint</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 If token valid, returns the userId.
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get userId():uint</code><br/></div><a name="propertyDetail"></a><a name="userName"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">userName</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>userName:String</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 If token valid, returns the username. 
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get userName():String</code><br/></div><a name="constructorDetail"></a><div class="detailSectionHeader">Constructor Detail</div><a name="Milky()"></a><a name="Milky(String,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">Milky</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">Constructor</td></tr></table><div class="detailBody"><code>public function Milky(apiKey:String, sharedSecret:String)</code><p></p><br/><br/><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">apiKey</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">sharedSecret</span>:String</code></td></tr></table></div><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="addContact()"></a><a name="addContact(uint,String,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">addContact</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function addContact(timeline:uint, name:String, token:String):void</code><p></p><p></p><p>
+		 Adds a contact with given <b>eMail</b> or <b>name</b> as <code>name</code> parameter.
+		 <p>
+		 <i>Result type will be <code>MilkyContact</code>.</i>
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">timeline</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">name</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr></table></p></div><a name="addContactToGroup()"></a><a name="addContactToGroup(uint,uint,uint,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">addContactToGroup</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function addContactToGroup(timeline:uint, groupId:uint, contactId:uint, token:String):void</code><p></p><p></p><p>
+		 Adds a specific contact to a group with given id.
+		 <p>
+		 <i>Result will be of Type <code>Boolean</code>.</i>
+		 </p> 
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">timeline</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">groupId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">contactId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr></table></p></div><a name="addGroup()"></a><a name="addGroup(uint,String,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">addGroup</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function addGroup(timeline:uint, name:String, token:String):void</code><p></p><p></p><p>
+		 Creates Group with given name
+		 
+		 <p>
+		 <i>Result will be of Type <code>MilkyGroup</code>.</i>
+		 </p> 
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">timeline</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">name</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr></table></p></div><a name="addList()"></a><a name="addList(uint,String,String,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">addList</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function addList(timeline:uint, name:String, token:String, filter:String):void</code><p></p><p></p><p>
+		 Adds a list with given name,timeline and filter
+		 <p>
+		 Filter value is a string with parameter and brackets.
+		 Here is a list of available values: 
+		 <a href="http://www.rememberthemilk.com/help/answers/search/advanced.rtm" target="external">http://www.rememberthemilk.com/help/answers/search/advanced.rtm</a>
+		 </p>
+		 <p>
+		 Values can be connected using the keyward "and" like in this example:
+		 <code>(status:incomplete and name:super)</code>
+		 </p>
+		 <p>
+		 Parameter <code>name</code> should not be <b>Inbox</b> or <b>Sent</b>
+		 </p>
+		 <p> 
+		 <i>Result will be a <code>MilkyList</code> objects.</i>
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">timeline</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">name</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">filter</span>:String</code></td></tr></table></p><p><span class="label">See also</span></p><div class="seeAlso"><a href="http://www.rememberthemilk.com/help/answers/search/advanced.rtm" target="mm_external">http://www.rememberthemilk.com/help/answers/search/advanced.rtm</a></div></div><a name="addNote()"></a><a name="addNote(uint,uint,uint,uint,String,String,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">addNote</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function addNote(timeline:uint, listId:uint, taskseriesId:uint, taskId:uint, title:String, body:String, token:String):void</code><p></p><p></p><p>
+		 Adds a new note with given properties
+		 
+		 <p> 
+		 <i>Result will be of type <code>MilkyNote</code>.</i>
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">timeline</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">listId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">taskseriesId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">taskId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">title</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">body</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr></table></p></div><a name="addTask()"></a><a name="addTask(uint,String,String,uint,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">addTask</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function addTask(timeline:uint, name:String, token:String, listId:uint = 0, parse:String):void</code><p></p><p></p><p>
+		 Adds a task to the list with given id
+		 
+		 <p> 
+		 <i>Result will be of type <code>MilkyTaskSeries</code>.</i>
+		 </p>
+		 
+		 <p>
+		 <code>parse</code> is a paremter which supports Smart Add ability:
+		 </p>
+		 <a href="http://www.rememberthemilk.com/services/smartadd/" target="external">http://www.rememberthemilk.com/services/smartadd/</a>
+		  
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">timeline</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">name</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">listId</span>:uint</code> (default = <code>0</code>)<code></code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">parse</span>:String</code></td></tr></table></p><p><span class="label">See also</span></p><div class="seeAlso"><a href="http://www.rememberthemilk.com/services/smartadd/" target="mm_external">http://www.rememberthemilk.com/services/smartadd/</a></div></div><a name="addTaskTags()"></a><a name="addTaskTags(uint,uint,uint,uint,Array,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">addTaskTags</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function addTaskTags(timeline:uint, listId:uint, taskseriesId:uint, taskId:uint, tags:Array, token:String):void</code><p></p><p></p><p>
+		 Adds tags to a specific task.
+		 <p>
+		 Tags are specified as Array of Strings.
+		 </p>
+		 <p> 
+		 <i>Result will be of type <code>MilkyTaskSeries</code>.</i>
+		 </p>
+		  
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">timeline</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">listId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">taskseriesId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">taskId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">tags</span>:Array</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr></table></p></div><a name="archiveList()"></a><a name="archiveList(uint,uint,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">archiveList</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function archiveList(timeline:uint, listId:uint, token:String):void</code><p></p><p></p><p>
+		 Archives list with given id
+		 		 <p> 
+		 <i>Result will be a <code>MilkyList</code> objects.</i>
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">timeline</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">listId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr></table></p></div><a name="checkToken()"></a><a name="checkToken(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">checkToken</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function checkToken(token:String):void</code><p></p><p></p><p>
+		 Checks if token is still valid
+		 <p>
+		 <i>Result Type will be <code>string</code>.</i>
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr></table></p></div><a name="convertTime()"></a><a name="convertTime(String,String,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">convertTime</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function convertTime(toTimezone:String, fromTimezone:String, time:String):void</code><p></p><p></p><p>
+		 <p>
+		 Converts time from one timezone to another.
+		 When just passing the <code>toTimezone</code> and/or the <code>fromTimezone</code> arguments, time default value is <i>now</i>
+		 Timezones can be retrieved via the <code>getTimezones</code> method.
+		 Both <code>toTimezone</code> and <code>fromTimezon</code> accept valid timezone names (e.g. "Australia/Sydney")
+		 <code>time</code> parameter should be in ISO 8601 format.
+		  </p>
+		 
+		 <i>Result will be of type <code>MilkyTime</code>.</i>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">toTimezone</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">fromTimezone</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">time</span>:String</code></td></tr></table></p></div><a name="createTimeline()"></a><a name="createTimeline(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">createTimeline</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function createTimeline(token:String):void</code><p></p><p></p><p>
+		 Creates a new timeline. 
+		 Timeline will not expire and can be reused.
+		 <p>
+		 You´ll always need a timeline for almost every api method which can be undone. 
+		 Adding contacts, notes etc. 
+		 </p>
+		 <i>Result Type will be <code>uint</code>.</i>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr></table></p></div><a name="deleteContact()"></a><a name="deleteContact(uint,uint,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">deleteContact</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function deleteContact(timeline:uint, contactId:uint, token:String):void</code><p></p><p></p><p>
+		 Deletes a contact
+		 <p>
+		 <i>Result type will be <code>Boolean</code>.</i>
+		 </p>
+		  
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">timeline</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">contactId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr></table></p></div><a name="deleteGroup()"></a><a name="deleteGroup(uint,uint,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">deleteGroup</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function deleteGroup(timeline:uint, groupId:uint, token:String):void</code><p></p><p></p><p>
+		 Deletes group with given id.
+		  
+		 <p>
+		 <i>Result will be of Type <code>Boolean</code>.</i>
+		 </p> 
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">timeline</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">groupId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr></table></p></div><a name="deleteList()"></a><a name="deleteList(uint,uint,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">deleteList</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function deleteList(timeline:uint, listId:uint, token:String):void</code><p></p><p></p><p>
+		 Deletes a list with given id
+		  
+		 <p> 
+		 <i>Result will be a <code>MilkyList</code> objects.</i>
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">timeline</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">listId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr></table></p></div><a name="deleteNote()"></a><a name="deleteNote(uint,uint,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">deleteNote</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function deleteNote(timeline:uint, noteId:uint, token:String):void</code><p></p><p></p><p>
+		 Deletes a note with given id
+		 
+		 <p> 
+		 <i>Result will be of type <code>Boolean</code>.</i>
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">timeline</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">noteId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr></table></p></div><a name="deleteTask()"></a><a name="deleteTask(uint,uint,uint,uint,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">deleteTask</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function deleteTask(timeline:uint, listId:uint, taskseriesId:uint, taskId:uint, token:String):void</code><p></p><p></p><p>
+		 Deletes a task
+		 
+		 <p> 
+		 <i>Result will be of type <code>MilkyTaskSeries</code>.</i>
+		 </p>
+		 
+		 <p>
+		 <code>parse</code> is a paremter which supports Smart Add ability:
+		 </p>
+		 <a href="http://www.rememberthemilk.com/services/smartadd/" target="external">http://www.rememberthemilk.com/services/smartadd/</a>
+		  
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">timeline</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">listId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">taskseriesId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">taskId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr></table></p><p><span class="label">See also</span></p><div class="seeAlso"><a href="http://www.rememberthemilk.com/services/smartadd/" target="mm_external">http://www.rememberthemilk.com/services/smartadd/</a></div></div><a name="editNote()"></a><a name="editNote(uint,uint,String,String,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">editNote</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function editNote(timeline:uint, noteId:uint, title:String, body:String, token:String):void</code><p></p><p></p><p>
+		 Edits a note with given id
+		 
+		 <p> 
+		 <i>Result will be of type <code>MilkyNote</code>.</i>
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">timeline</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">noteId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">title</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">body</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr></table></p></div><a name="generateAuthUrl()"></a><a name="generateAuthUrl(String,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">generateAuthUrl</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function generateAuthUrl(frob:String, permission:String):String</code><p></p><p></p><p>
+		 Use this method to generate an auth-url string 
+		 
+		  
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">frob</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">permission</span>:String</code> (default = <code>NaN</code>)<code></code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>String</code> &mdash; 
+		 
+		 </td></tr></table></div><a name="getContactList()"></a><a name="getContactList(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getContactList</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getContactList(token:String):void</code><p></p><p></p><p>
+		  Gets the user´s contact list.
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr></table></p></div><a name="getFrob()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getFrob</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getFrob():void</code><p></p><p></p><p>
+		 Gets a frob 
+		 <p>
+		 <i>Result Type will be <code>String</code>.</i> 
+		 </p>
+		 
+		 </p></div><a name="getGroupList()"></a><a name="getGroupList(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getGroupList</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getGroupList(token:String):void</code><p></p><p></p><p>
+		 Retrieves group list
+		 <p>
+		 <i>Result will be an array with <code>MilkyGroup</code>-Objects.</i>
+		 </p> 
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr></table></p></div><a name="getLists()"></a><a name="getLists(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getLists</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getLists(token:String):void</code><p></p><p></p><p>
+		 Retrieves a lists of lists 
+		 
+		 <p> 
+		 <i>Result will be an array with a list of <code>MilkyList</code> objects.</i>
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr></table></p></div><a name="getLocations()"></a><a name="getLocations(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getLocations</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getLocations(token:String):void</code><p></p><p></p><p>
+		 Retrieves a list of locations.
+		 
+		 <p> 
+		 <i>Result will be an array with a list of <code>MilkyLocation</code> objects.</i>
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr></table></p></div><a name="getMethodInfo()"></a><a name="getMethodInfo(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getMethodInfo</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getMethodInfo(name:String):void</code><p></p><p></p><p>
+		 Retrives method info
+		 <p>
+		 <i>Result type will be <code>xml</code>.</i>
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">name</span>:String</code></td></tr></table></p></div><a name="getMethods()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getMethods</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getMethods():void</code><p></p><p></p><p>
+		 Retrives available methods
+		 <p>
+		 <i>Result type will be <code>xml</code>.</i>
+		 </p>
+		 
+		 </p></div><a name="getSettings()"></a><a name="getSettings(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getSettings</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getSettings(token:String):void</code><p></p><p></p><p>
+		 Retrieves user settings
+		 <p>
+		 <i>Result will be of type <code>MilkySettings</code>.</i>
+		 </p>
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr></table></p></div><a name="getTaskList()"></a><a name="getTaskList(String,uint,String,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getTaskList</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getTaskList(token:String, listId:uint = 0, lastSync:String, filter:String):void</code><p></p><p></p><p>
+		 Gets a list with Taskseries/Tasks 
+		 
+		 <p> 
+		 <i>Result will be an array with objects of type <code>MilkyTaskSeries</code>.</i>
+		 </p>
+		  
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">listId</span>:uint</code> (default = <code>0</code>)<code></code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">lastSync</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">filter</span>:String</code></td></tr></table></p></div><a name="getTimezones()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getTimezones</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getTimezones():void</code><p></p><p></p><p>
+		 Gets available timezones
+		 <p>
+		 If result type is "array", result will be a vo of type <code>MilkySettings</code> 
+		 </p>
+		 <i>Result Type will be an array with a list of <code>MilkyTimezone</code>-Objects.</i>
+		 
+		 </p></div><a name="getToken()"></a><a name="getToken(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getToken</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getToken(frob:String):void</code><p></p><p></p><p>
+		 Get a Token  
+		 <p>
+		 <i>Result Type Event will be <code>String</code>.</i>
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">frob</span>:String</code></td></tr></table></p></div><a name="handleComplete()"></a><a name="handleComplete(flash.events.Event)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">handleComplete</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>override protected function handleComplete(e:Event = null):void</code><p></p><p></p><p>
+		 Event handling for
+		 <i>Event.COMPLETE</i>.
+		  
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">e</span>:Event</code> (default = <code>null</code>)<code></code></td></tr></table></p></div><a name="handleHttpStatus()"></a><a name="handleHttpStatus(flash.events.HTTPStatusEvent)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">handleHttpStatus</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>override protected function handleHttpStatus(e:HTTPStatusEvent = null):void</code><p></p><p></p><p>
+		 Event forwarding for
+		 <i>HTTPStatusEvent.HTTP_STATUS</i>.
+		  
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">e</span>:HTTPStatusEvent</code> (default = <code>null</code>)<code></code></td></tr></table></p></div><a name="handleIOErrors()"></a><a name="handleIOErrors(flash.events.IOErrorEvent)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">handleIOErrors</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>override protected function handleIOErrors(e:IOErrorEvent = null):void</code><p></p><p></p><p>
+		 Event forwarding for
+		 <i>IOErrorEvent.IO_ERROR</i>.
+		  
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">e</span>:IOErrorEvent</code> (default = <code>null</code>)<code></code></td></tr></table></p></div><a name="handleOpen()"></a><a name="handleOpen(flash.events.Event)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">handleOpen</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>override protected function handleOpen(e:Event = null):void</code><p></p><p></p><p>
+		 Event forwarding for
+		 <i>Event.OPEN</i>.
+		  
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">e</span>:Event</code> (default = <code>null</code>)<code></code></td></tr></table></p></div><a name="handleProgress()"></a><a name="handleProgress(flash.events.ProgressEvent)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">handleProgress</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>override protected function handleProgress(e:ProgressEvent = null):void</code><p></p><p></p><p>
+		 Event forwarding for
+		 <i>ProgressEvent.PROGRESS</i>.
+		  
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">e</span>:ProgressEvent</code> (default = <code>null</code>)<code></code></td></tr></table></p></div><a name="handleSecurityError()"></a><a name="handleSecurityError(flash.events.SecurityErrorEvent)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">handleSecurityError</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>override protected function handleSecurityError(e:SecurityErrorEvent = null):void</code><p></p><p></p><p>
+		 Event forwarding for
+		 <i>SecurityErrorEvent.SECURITY_ERROR</i>.
+		  
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">e</span>:SecurityErrorEvent</code> (default = <code>null</code>)<code></code></td></tr></table></p></div><a name="movePriority()"></a><a name="movePriority(uint,uint,uint,uint,String,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">movePriority</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function movePriority(timeline:uint, listId:uint, taskseriesId:uint, taskId:uint, token:String, direction:String):void</code><p></p><p></p><p>
+		 Moves Priority of a specific task
+		 
+		 <p>
+		 Use contants <code>MilkyConsts.PRIORITY_UP</code> and <code>MilkyConsts.PRIORITY_DOWN</code>.
+		 </p>
+		 <p> 
+		 <i>Result will be of type <code>MilkyTaskSeries</code>.</i>
+		 </p>
+		  
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">timeline</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">listId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">taskseriesId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">taskId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">direction</span>:String</code> (default = <code>NaN</code>)<code></code></td></tr></table></p></div><a name="moveTaskToList()"></a><a name="moveTaskToList(uint,uint,uint,uint,uint,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">moveTaskToList</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function moveTaskToList(timeline:uint, fromListId:uint, toListId:uint, taskseriesId:uint, taskId:uint, token:String):void</code><p></p><p></p><p>
+		 Moves a task to a specific list 
+		 
+		 <p> 
+		 <i>Result will be of type <code>MilkyTaskSeries</code>.</i>
+		 </p>
+		  
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">timeline</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">fromListId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">toListId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">taskseriesId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">taskId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr></table></p></div><a name="parseTime()"></a><a name="parseTime(String,String,uint)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">parseTime</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function parseTime(text:String, timezone:String, dateformat:uint = 1):void</code><p></p><p></p><p>
+		 Given text gets parsed.
+		 
+		 <p>
+		 Dateformat: A value of 0 indicates an European date format (14/02/2006).A value of 1 indicates an American date format (02/14/2006). 
+		 This value is used in case a date is ambiguous. Defaults to 1.
+		 </p>
+		 See <code>getTimezones</code> for available timezones.
+		 <p> 
+		 <i>Result will be of type <code>MilkyTime</code>.</i>
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">text</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">timezone</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">dateformat</span>:uint</code> (default = <code>1</code>)<code></code></td></tr></table></p></div><a name="postponeTask()"></a><a name="postponeTask(uint,uint,uint,uint,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">postponeTask</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function postponeTask(timeline:uint, listId:uint, taskseriesId:uint, taskId:uint, token:String):void</code><p></p><p></p><p>
+		 Postpones a task
+		 
+		 <p> 
+		 <i>Result will be of type <code>MilkyTaskSeries</code>.</i>
+		 </p>
+		  
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">timeline</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">listId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">taskseriesId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">taskId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr></table></p></div><a name="removeContactFromGroup()"></a><a name="removeContactFromGroup(uint,uint,uint,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">removeContactFromGroup</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function removeContactFromGroup(timeline:uint, groupId:uint, contactId:uint, token:String):void</code><p></p><p></p><p>
+		 Removes a specific contact from a group with given id.
+		 <p>
+		 <i>Result will be of Type <code>Boolean</code>.</i>
+		 </p> 
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">timeline</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">groupId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">contactId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr></table></p></div><a name="removeTaskTags()"></a><a name="removeTaskTags(uint,uint,uint,uint,Array,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">removeTaskTags</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function removeTaskTags(timeline:uint, listId:uint, taskseriesId:uint, taskId:uint, tags:Array, token:String):void</code><p></p><p></p><p>
+		 Remove tags of a specific task.
+		 
+		 <p>
+		 Tags are specified as Array of Strings.
+		 </p>
+		 <p> 
+		 <i>Result will be of type <code>MilkyTaskSeries</code>.</i>
+		 </p>
+		  
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">timeline</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">listId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">taskseriesId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">taskId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">tags</span>:Array</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr></table></p></div><a name="setDefaultList()"></a><a name="setDefaultList(uint,uint,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setDefaultList</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setDefaultList(timeline:uint, listId:uint, token:String):void</code><p></p><p></p><p>
+		 Sets list with given id as default list
+		  
+		 <p> 
+		 <i>Result will be of type <code>Boolean</code>.</i>
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">timeline</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">listId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr></table></p></div><a name="setListName()"></a><a name="setListName(uint,uint,String,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setListName</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setListName(timeline:uint, listId:uint, name:String, token:String):void</code><p></p><p></p><p>
+		 Sets the name of the list with given id
+		 <p>
+		 Parameter <code>name</code> should not be <b>Inbox</b> or <b>Sent</b>
+		 </p>
+		 
+		 <p> 
+		 <i>Result will be a <code>MilkyList</code> objects.</i>
+		 </p>
+		  
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">timeline</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">listId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">name</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr></table></p></div><a name="setTaskCompleted()"></a><a name="setTaskCompleted(uint,uint,uint,uint,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setTaskCompleted</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setTaskCompleted(timeline:uint, listId:uint, taskseriesId:uint, taskId:uint, token:String):void</code><p></p><p></p><p>
+		 Mark a task as complete
+		 
+		 <p> 
+		 <i>Result will be of type <code>MilkyTaskSeries</code>.</i>
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">timeline</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">listId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">taskseriesId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">taskId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr></table></p></div><a name="setTaskDueDate()"></a><a name="setTaskDueDate(uint,uint,uint,uint,String,String,Boolean,Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setTaskDueDate</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setTaskDueDate(timeline:uint, listId:uint, taskseriesId:uint, taskId:uint, token:String, due:String, hasDueTime:Boolean = false, parse:Boolean = false):void</code><p></p><p></p><p>
+		 Sets due date of a task
+		 <p>
+		 If empty, due date will be unset.
+		 </p>
+		 <p>
+		 If parse is set to true, date will be parsed as per rtm.time.parse.rtm
+		 </p>
+		 
+		 <p> 
+		 <i>Result will be of type <code>MilkyTaskSeries</code>.</i>
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">timeline</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">listId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">taskseriesId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">taskId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">due</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">hasDueTime</span>:Boolean</code> (default = <code>false</code>)<code></code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">parse</span>:Boolean</code> (default = <code>false</code>)<code></code></td></tr></table></p></div><a name="setTaskEstimate()"></a><a name="setTaskEstimate(uint,uint,uint,uint,String,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setTaskEstimate</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setTaskEstimate(timeline:uint, listId:uint, taskseriesId:uint, taskId:uint, token:String, estimate:String):void</code><p></p><p></p><p>
+		 Sets the task estimate time
+		 <p>
+		 Should provide value of <b>day</b>,<b>hours</b> or <b>minutes</b>.
+		 </p>
+		  <p>
+		 If empty, estimate will be unset.
+		 </p>
+		 <p> 
+		 <i>Result will be of type <code>MilkyTaskSeries</code>.</i>
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">timeline</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">listId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">taskseriesId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">taskId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">estimate</span>:String</code></td></tr></table></p></div><a name="setTaskLocation()"></a><a name="setTaskLocation(uint,uint,uint,uint,String,uint)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setTaskLocation</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setTaskLocation(timeline:uint, listId:uint, taskseriesId:uint, taskId:uint, token:String, locationId:uint = 0):void</code><p></p><p></p><p>
+		 Sets the task location
+		 
+		 <p>
+		 If 0, location will be unset.
+		 </p>
+		 <p> 
+		 <i>Result will be of type <code>MilkyTaskSeries</code>.</i>
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">timeline</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">listId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">taskseriesId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">taskId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">locationId</span>:uint</code> (default = <code>0</code>)<code></code></td></tr></table></p></div><a name="setTaskName()"></a><a name="setTaskName(uint,uint,uint,uint,String,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setTaskName</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setTaskName(timeline:uint, listId:uint, taskseriesId:uint, taskId:uint, name:String, token:String):void</code><p></p><p></p><p>
+		 Sets the task name
+		 
+		 <p> 
+		 <i>Result will be of type <code>MilkyTaskSeries</code>.</i>
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">timeline</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">listId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">taskseriesId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">taskId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">name</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr></table></p></div><a name="setTaskPriority()"></a><a name="setTaskPriority(uint,uint,uint,uint,String,uint)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setTaskPriority</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setTaskPriority(timeline:uint, listId:uint, taskseriesId:uint, taskId:uint, token:String, priority:uint = 0):void</code><p></p><p></p><p>
+		 Sets priority of a task
+		 
+		 <p>
+		 Valid values are 1, 2 and 3. If priority is not specified or is an invalid value, the task is marked as having no priority.
+		 </p>
+		 
+		 <p> 
+		 <i>Result will be of type <code>MilkyTaskSeries</code>.</i>
+		 </p>
+		  
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">timeline</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">listId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">taskseriesId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">taskId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">priority</span>:uint</code> (default = <code>0</code>)<code></code></td></tr></table></p></div><a name="setTaskRecurrence()"></a><a name="setTaskRecurrence(uint,uint,uint,uint,String,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setTaskRecurrence</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setTaskRecurrence(timeline:uint, listId:uint, taskseriesId:uint, taskId:uint, token:String, repeat:String):void</code><p></p><p></p><p>
+		 Sets a reurrence pattern for a task
+		 <p>
+		 Valid values of repeat are detailed <a href="http://www.rememberthemilk.com/help/answers/basics/repeatformat.rtm" target="external">here</a>.
+		 </p>
+		 
+		 <p> 
+		 <i>Result will be of type <code>MilkyTaskSeries</code>.</i>
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">timeline</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">listId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">taskseriesId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">taskId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">repeat</span>:String</code></td></tr></table></p><p><span class="label">See also</span></p><div class="seeAlso"><a href="http://www.rememberthemilk.com/help/answers/basics/repeatformat.rtm" target="mm_external">http://www.rememberthemilk.com/help/answers/basics/repeatformat.rtm</a></div></div><a name="setTaskTags()"></a><a name="setTaskTags(uint,uint,uint,uint,Array,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setTaskTags</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setTaskTags(timeline:uint, listId:uint, taskseriesId:uint, taskId:uint, tags:Array, token:String):void</code><p></p><p></p><p>
+		 Sets tags of a specific task.
+		 <p>
+		 Tags are specified as Array of Strings. Pass an empty array to clear tags.
+		 </p>
+		 <p> 
+		 <i>Result will be of type <code>MilkyTaskSeries</code>.</i>
+		 </p>
+		  
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">timeline</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">listId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">taskseriesId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">taskId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">tags</span>:Array</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr></table></p></div><a name="setTaskUncomplete()"></a><a name="setTaskUncomplete(uint,uint,uint,uint,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setTaskUncomplete</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setTaskUncomplete(timeline:uint, listId:uint, taskseriesId:uint, taskId:uint, token:String):void</code><p></p><p></p><p>
+		 Mark a task as uncomplete
+		 
+		 <p> 
+		 <i>Result will be of type <code>MilkyTaskSeries</code>.</i>
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">timeline</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">listId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">taskseriesId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">taskId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr></table></p></div><a name="setTaskURL()"></a><a name="setTaskURL(uint,uint,uint,uint,String,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setTaskURL</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setTaskURL(timeline:uint, listId:uint, taskseriesId:uint, taskId:uint, token:String, url:String):void</code><p></p><p></p><p>
+		 Sets url for a task
+		 <p>
+		 If left empty, url will be unset.
+		 </p>
+		  <p> 
+		 <i>Result will be of type <code>MilkyTaskSeries</code>.</i>
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">timeline</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">listId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">taskseriesId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">taskId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">url</span>:String</code></td></tr></table></p></div><a name="testEcho()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">testEcho</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function testEcho():void</code><p></p><p></p><p>
+		 Echo method for testing purposes
+		 <p>
+		 <i>Result type will be <code>xml</code>.</i>
+		 </p>
+		 
+		 </p></div><a name="testLogin()"></a><a name="testLogin(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">testLogin</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function testLogin(token:String):void</code><p></p><p></p><p>
+		 Login method for testing purposes
+		 <p>
+		 <i>Result type will be <code>xml</code>.</i>
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr></table></p></div><a name="unArchiveList()"></a><a name="unArchiveList(uint,uint,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">unArchiveList</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function unArchiveList(timeline:uint, listId:uint, token:String):void</code><p></p><p></p><p>
+		 Unarchives list with given id
+		 		 <p> 
+		 <i>Result will be a <code>MilkyList</code> objects.</i>
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">timeline</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">listId</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr></table></p></div><a name="undoTransaction()"></a><a name="undoTransaction(uint,Number,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">undoTransaction</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function undoTransaction(timeline:uint, transactionId:Number, token:String):void</code><p></p><p></p><p>
+		 Perform an undo operation on given transaction id
+		 
+		 <p> 
+		 <i>Result will be of type <code>Boolean</code>.</i>
+		 </p>
+		  
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">timeline</span>:uint</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">transactionId</span>:Number</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">token</span>:String</code></td></tr></table></p></div><div class="detailSectionHeader"> Event Detail </div><a name="event:api_fail"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">api_fail</td><td class="detailHeaderType"> Event </td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../com/boxedfolder/rtm/events/MilkyEvent.html"><code>com.boxedfolder.rtm.events.MilkyEvent</code></a><br/><p></p><p></p><p></p></div><a name="event:api_result"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">api_result</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../com/boxedfolder/rtm/events/MilkyEvent.html"><code>com.boxedfolder.rtm.events.MilkyEvent</code></a><br/><p></p><p></p><p></p></div><a name="event:httpStatus"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">httpStatus</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><code>flash.events.HTTPStatusEvent</code><br/><p></p><p></p><p></p></div><a name="event:ioError"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">ioError</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><code>flash.events.IOErrorEvent</code><br/><p></p><p></p><p></p></div><a name="event:open"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">open</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><code>flash.events.Event</code><br/><p></p><p></p><p></p></div><a name="event:progress"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">progress</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><code>flash.events.ProgressEvent</code><br/><p></p><p></p><p></p></div><a name="event:securityError"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">securityError</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><code>flash.events.SecurityErrorEvent</code><br/><p></p><p></p><p></p></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>www.boxedfolder.com</footer><br/>Samstag Januar 23 2010, 02:22 AM +01:00  </center></div></body></html><!--www.boxedfolder.com<br/>Samstag Januar 23 2010, 02:22 AM +01:00  -->

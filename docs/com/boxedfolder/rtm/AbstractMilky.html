@@ -1,0 +1,123 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../override.css" type="text/css"><meta name="keywords" content="AbstractMilky,com.boxedfolder.rtm.AbstractMilky,ADD_CONTACT_TO_GROUP,ADD_CONTACT,ADD_GROUP,ADD_LIST,ADD_NOTE,ADD_TASK_TAGS,ADD_TASK,ARCHIVE_LIST,ARRAY_FORMAT,BASE_URL,CHECK_TOKEN,CONVERT_TIME,CREATE_TIMELINE,DELETE_CONTACT,DELETE_GROUP,DELETE_LIST,DELETE_NOTE,DELETE_TASK,EDIT_NOTE,GET_CONTACT_LIST,GET_FROB,GET_GROUP_LIST,GET_LISTS,GET_LOCATIONS,GET_METHODS,GET_METHOD_INFO,GET_SETTINGS,GET_TASK_LIST,GET_TIMEZONES,GET_TOKEN,MOVE_TASK_PRIORITY,MOVE_TASK_TO_LIST,PARSE_TIME,PERMISSION_DELETE,PERMISSION_READ,PERMISSION_WRITE,POSTPONE_TASK,PRIORITY_DOWN,PRIORITY_UP,REMOVE_CONTACT_FROM_GROUP,REMOVE_TAGS,SET_DEFAULT_LIST,SET_LIST_NAME,SET_TASK_COMPLETE,SET_TASK_DUE_DATE,SET_TASK_ESTIMATE,SET_TASK_LOCATION,SET_TASK_NAME,SET_TASK_PRIORITY,SET_TASK_RECURRENCE,SET_TASK_TAGS,SET_TASK_UNCOMPLETE,SET_TASK_URL,TEST_ECHO,TEST_LOGIN,UNARCHIVE_LIST,UNDO_TRANSACTION,XML_FORMAT,apiKey,dataFormat,fullName,isBusy,lastApiMethod,lastResult,permission,sharedSecret,userId,userName,addContact,addContactToGroup,addGroup,addList,addNote,addTask,addTaskTags,archiveList,checkToken,convertTime,createTimeline,deleteContact,deleteGroup,deleteList,deleteNote,deleteTask,editNote,generateAuthUrl,getContactList,getFrob,getGroupList,getLists,getLocations,getMethodInfo,getMethods,getSettings,getTaskList,getTimezones,getToken,handleComplete,handleComplete,handleHttpStatus,handleHttpStatus,handleIOErrors,handleIOErrors,handleOpen,handleOpen,handleProgress,handleProgress,handleSecurityError,handleSecurityError,movePriority,moveTaskToList,parseTime,postponeTask,removeContactFromGroup,removeTaskTags,setDefaultList,setListName,setTaskCompleted,setTaskDueDate,setTaskEstimate,setTaskLocation,setTaskName,setTaskPriority,setTaskRecurrence,setTaskTags,setTaskURL,setTaskUncomplete,signRequest,testEcho,testLogin,unArchiveList,undoTransaction"><title>com.boxedfolder.rtm.AbstractMilky</title></head><body><script language="javascript" type="text/javascript" src="../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'AbstractMilky - Milky API Dokumentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">Milky API Dokumentation</td><td class="titleTableTopNav" align="right"><a href="../../../package-summary.html" onclick="loadClassListFrame('../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../class-summary.html" onclick="loadClassListFrame('../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../all-index-A.html" onclick="loadClassListFrame('../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../index.html?com/boxedfolder/rtm/AbstractMilky.html&amp;com/boxedfolder/rtm/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">AbstractMilky</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#constantSummary">Constants</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("AbstractMilky"); titleBar_setSubNav(true,true,false,false,false,false,false,false,true,false,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">com.boxedfolder.rtm</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  AbstractMilky</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">AbstractMilky  <img src="../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> flash.events.EventDispatcher</td></tr><tr><td class="classHeaderTableLabel">Subclasses</td><td> <a href="../../../com/boxedfolder/rtm/Milky.html">Milky</a></td></tr></table><p></p><p></p><p></p>
+	              <b>AbstractMilky</b>
+	 
+	              <p>
+	 Abstract class which handles internal service calls.
+	 Concrete service methods should be declared in the concrete Milky class.
+	 </p> 
+	 
+	           <p></p><br/><hr></div><a name="propertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#apiKey" class="signatureLink">apiKey</a> : String<div class="summaryTableDescription">
+		 Your api key
+		  
+		 </div></td><td class="summaryTableOwnerCol">AbstractMilky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#dataFormat" class="signatureLink">dataFormat</a> : String<div class="summaryTableDescription">
+		 Possible data formats are "array" or "xml"
+		 
+		 
+		 "array" responds with an array of VO´s
+		 "xml" responds with raw xml
+		 
+		 
+		 Some methods however respond with booleans, strings or xml.</div></td><td class="summaryTableOwnerCol">AbstractMilky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#isBusy" class="signatureLink">isBusy</a> : Boolean<div class="summaryTableDescription">[read-only] 
+		 Retrieves busy status of URLLoader.</div></td><td class="summaryTableOwnerCol">AbstractMilky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#lastApiMethod" class="signatureLink">lastApiMethod</a> : String<div class="summaryTableDescription">[read-only] 
+		 Returns the last called api method.</div></td><td class="summaryTableOwnerCol">AbstractMilky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#lastResult" class="signatureLink">lastResult</a> : Object<div class="summaryTableDescription">[read-only] 
+		 Contains the last query result.</div></td><td class="summaryTableOwnerCol">AbstractMilky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#sharedSecret" class="signatureLink">sharedSecret</a> : String<div class="summaryTableDescription">
+		 The shared key you get when signing up for an api key.</div></td><td class="summaryTableOwnerCol">AbstractMilky</td></tr></table></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#AbstractMilky()" class="signatureLink">AbstractMilky</a>(apiKey:String, sharedSecret:String)</div><div class="summaryTableDescription"></div></td><td class="summaryTableOwnerCol">AbstractMilky</td></tr></table></div><a name="methodSummary"></a><a name="protectedMethodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Protected Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProtectedMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#handleComplete()" class="signatureLink">handleComplete</a>(e:Event = null):void</div><div class="summaryTableDescription">
+		 Event-Handler for
+		 Event.COMPLETE.</div></td><td class="summaryTableOwnerCol">AbstractMilky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#handleHttpStatus()" class="signatureLink">handleHttpStatus</a>(e:HTTPStatusEvent = null):void</div><div class="summaryTableDescription">
+		 Abstract Event-Handler for
+		 HTTPStatusEvent.HTTP_STATUS.</div></td><td class="summaryTableOwnerCol">AbstractMilky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#handleIOErrors()" class="signatureLink">handleIOErrors</a>(e:IOErrorEvent = null):void</div><div class="summaryTableDescription">
+		 Event-Handler for
+		 IOErrorEvent.IO_ERROR.</div></td><td class="summaryTableOwnerCol">AbstractMilky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#handleOpen()" class="signatureLink">handleOpen</a>(e:Event = null):void</div><div class="summaryTableDescription">
+		 Abstract Event-Handler for
+		 Event.OPEN.</div></td><td class="summaryTableOwnerCol">AbstractMilky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#handleProgress()" class="signatureLink">handleProgress</a>(e:ProgressEvent = null):void</div><div class="summaryTableDescription">
+		 Abstract Event-Handler for
+		 ProgressEvent.PROGRESS.</div></td><td class="summaryTableOwnerCol">AbstractMilky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#handleSecurityError()" class="signatureLink">handleSecurityError</a>(e:SecurityErrorEvent = null):void</div><div class="summaryTableDescription">
+		 Event-Handler for
+		 SecurityErrorEvent.SECURITY_ERROR.</div></td><td class="summaryTableOwnerCol">AbstractMilky</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#signRequest()" class="signatureLink">signRequest</a>(args:URLVariables):String</div><div class="summaryTableDescription">
+		 
+		 Sign the request.</div></td><td class="summaryTableOwnerCol">AbstractMilky</td></tr></table></div><a name="protectedConstantSummary"></a><div class="summarySection"><div class="summaryTableTitle">Protected Constants</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProtectedConstant"><tr><th>&nbsp;</th><th colspan="2">Constant</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#BASE_URL" class="signatureLink">BASE_URL</a> : String = http://api.rememberthemilk.com/services/rest/<div class="summaryTableDescription">[static] 
+		 Base url 
+		 http://api.rememberthemilk.com/services/rest/
+		 
+		 </div></td><td class="summaryTableOwnerCol">AbstractMilky</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="apiKey"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">apiKey</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>apiKey:String</code><p></p><p></p><p>
+		 Your api key
+		  
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get apiKey():String</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set apiKey(value:String):void</code><br/></div><a name="propertyDetail"></a><a name="dataFormat"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">dataFormat</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>dataFormat:String</code><p></p><p></p><p>
+		 Possible data formats are "array" or "xml"
+		 
+		 <p>
+		 "array" responds with an array of VO´s
+		 "xml" responds with raw xml
+		 </p>
+		 
+		 Some methods however respond with booleans, strings or xml.
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get dataFormat():String</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set dataFormat(value:String):void</code><br/></div><a name="propertyDetail"></a><a name="isBusy"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">isBusy</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>isBusy:Boolean</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Retrieves busy status of <code>URLLoader</code>.
+		  
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get isBusy():Boolean</code><br/></div><a name="propertyDetail"></a><a name="lastApiMethod"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">lastApiMethod</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>lastApiMethod:String</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Returns the last called api method.
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get lastApiMethod():String</code><br/></div><a name="propertyDetail"></a><a name="lastResult"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">lastResult</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>lastResult:Object</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Contains the last query result.
+		  
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get lastResult():Object</code><br/></div><a name="propertyDetail"></a><a name="sharedSecret"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">sharedSecret</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>sharedSecret:String</code><p></p><p></p><p>
+		 The shared key you get when signing up for an api key. 
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get sharedSecret():String</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set sharedSecret(value:String):void</code><br/></div><a name="constructorDetail"></a><div class="detailSectionHeader">Constructor Detail</div><a name="AbstractMilky()"></a><a name="AbstractMilky(String,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">AbstractMilky</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">Constructor</td></tr></table><div class="detailBody"><code>public function AbstractMilky(apiKey:String, sharedSecret:String)</code><p></p><br/><br/><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">apiKey</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">sharedSecret</span>:String</code></td></tr></table></div><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="handleComplete()"></a><a name="handleComplete(flash.events.Event)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">handleComplete</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> protected function handleComplete(e:Event = null):void</code><p></p><p></p><p>
+		 Event-Handler for
+		 <i>Event.COMPLETE</i>.
+		  
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">e</span>:Event</code> (default = <code>null</code>)<code></code></td></tr></table></p></div><a name="handleHttpStatus()"></a><a name="handleHttpStatus(flash.events.HTTPStatusEvent)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">handleHttpStatus</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> protected function handleHttpStatus(e:HTTPStatusEvent = null):void</code><p></p><p></p><p>
+		 Abstract Event-Handler for
+		 <i>HTTPStatusEvent.HTTP_STATUS</i>.
+		  
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">e</span>:HTTPStatusEvent</code> (default = <code>null</code>)<code></code></td></tr></table></p></div><a name="handleIOErrors()"></a><a name="handleIOErrors(flash.events.IOErrorEvent)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">handleIOErrors</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> protected function handleIOErrors(e:IOErrorEvent = null):void</code><p></p><p></p><p>
+		 Event-Handler for
+		 <i>IOErrorEvent.IO_ERROR</i>.
+		  
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">e</span>:IOErrorEvent</code> (default = <code>null</code>)<code></code></td></tr></table></p></div><a name="handleOpen()"></a><a name="handleOpen(flash.events.Event)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">handleOpen</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> protected function handleOpen(e:Event = null):void</code><p></p><p></p><p>
+		 Abstract Event-Handler for
+		 <i>Event.OPEN</i>.
+		  
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">e</span>:Event</code> (default = <code>null</code>)<code></code></td></tr></table></p></div><a name="handleProgress()"></a><a name="handleProgress(flash.events.ProgressEvent)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">handleProgress</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> protected function handleProgress(e:ProgressEvent = null):void</code><p></p><p></p><p>
+		 Abstract Event-Handler for
+		 <i>ProgressEvent.PROGRESS</i>.
+		  
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">e</span>:ProgressEvent</code> (default = <code>null</code>)<code></code></td></tr></table></p></div><a name="handleSecurityError()"></a><a name="handleSecurityError(flash.events.SecurityErrorEvent)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">handleSecurityError</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> protected function handleSecurityError(e:SecurityErrorEvent = null):void</code><p></p><p></p><p>
+		 Event-Handler for
+		 <i>SecurityErrorEvent.SECURITY_ERROR</i>.
+		  
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">e</span>:SecurityErrorEvent</code> (default = <code>null</code>)<code></code></td></tr></table></p></div><a name="signRequest()"></a><a name="signRequest(flash.net.URLVariables)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">signRequest</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> protected function signRequest(args:URLVariables):String</code><p></p><p></p><p>
+		 <p>
+		 Sign the request.
+		 </p>
+		 <p> 
+		 Every api call (exept the test methods) must be signed in order to get some positive results.
+		 A signature is an md5 hash of the <i>api_key</i> + all parameters in an alphabetically sorted order without equal or other additional signs:
+		 </p>
+		 <p>
+		 Like <i>api_keyaparametervalueabparametervalueb</i>.
+		 </p>
+		  
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">args</span>:URLVariables</code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>String</code> &mdash; 
+		 
+		 </td></tr></table></div><div class="detailSectionHeader">Constant Detail</div><a name="constantDetail"></a><a name="BASE_URL"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">BASE_URL</td><td class="detailHeaderType">Constant</td></tr></table><div class="detailBody"><code>protected static const BASE_URL:String = http://api.rememberthemilk.com/services/rest/</code><p></p><p></p><p>
+		 Base url 
+		 <i>http://api.rememberthemilk.com/services/rest/</i>
+		 
+		 </p></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>www.boxedfolder.com</footer><br/>Samstag Januar 23 2010, 02:22 AM +01:00  </center></div></body></html><!--www.boxedfolder.com<br/>Samstag Januar 23 2010, 02:22 AM +01:00  -->
