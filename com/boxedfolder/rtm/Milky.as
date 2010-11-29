@@ -1543,8 +1543,7 @@ package com.boxedfolder.rtm
 					_userName = _lastResult.auth.user.@username;
 					_fullName = _lastResult.auth.user.@fullname;
 					_userId = _lastResult.auth.user.@id;
-					_permission = _lastResult.auth.perms;
-					
+					_permission = _lastResult.auth.perms;				
 				}
 				
 				// Delegate positive response
